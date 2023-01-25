@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/title_constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@color/green">
+
+    <TextView
+        android:id="@+id/id_title_textview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/id"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/id_linearlayout"
+        app:layout_constraintBottom_toBottomOf="@id/id_linearlayout"/>
+
+    <LinearLayout
+        android:id="@+id/id_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/id_title_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/name_title_textview"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_title_textview"
+        android:background="@drawable/border_right">
+
+
+
+        <ImageView
+            android:id="@+id/sort_id_descending_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            android:backgroundTint="#00ff0000"
+            />
+
+        <ImageView
+            android:id="@+id/sort_id_ascending_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:backgroundTint="#0000ffff"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/name_title_textview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/name"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/id_linearlayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/name_title_textview"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_title_textview"
+
+        />
+    <LinearLayout
+        android:id="@+id/name_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/name_title_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/status_title_textview"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_title_textview"
+        android:background="@drawable/border_right">
+
+
+
+        <ImageView
+            android:id="@+id/sort_name_descending_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            android:backgroundTint="#0000ffff"
+
+            />
+
+        <ImageView
+            android:id="@+id/sort_name_ascending_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:backgroundTint="#0000ffff"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status_title_textview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/status"
+        app:layout_constraintStart_toEndOf="@id/name_linearlayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/status_linearlayout"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_title_textview"
+        />
+
+    <LinearLayout
+        android:id="@+id/status_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/status_title_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/date_title_textview"
+        android:background="@drawable/border_right">
+
+        <ImageView
+            android:id="@+id/sort_status_descending_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            android:backgroundTint="#0000ffff"
+            />
+
+
+        <ImageView
+            android:id="@+id/sort_status_ascending_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:backgroundTint="#0000ffff"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/date_title_textview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/date"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/status_linearlayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/date_linearlayout"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_title_textview"/>
+
+    <LinearLayout
+        android:id="@+id/date_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/date_title_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/filter_imageview"
+        android:background="@drawable/border_right">
+
+        <ImageView
+            android:id="@+id/sort_date_descending_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0000ffff"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+        <ImageView
+            android:id="@+id/sort_date_ascending_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:backgroundTint="#0000ffff"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/filter_imageview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_baseline_filter_list_24"
+        android:backgroundTint="#0000ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/date_linearlayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_title_textview"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_customer_information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:visibility="visible"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_constraintlayout"/>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_new_customer_floatingactionbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_baseline_add_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

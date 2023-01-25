@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">Name</string>
+    <string name="email">email</string>
+    <string name="id">id</string>
+    <string name="status">status</string>
+    <string name="date">Date</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="save">Save</string>
+    <string name="add_new_customer_details">Add New Customer Details</string>
+    <string name="add">Add</string>
+    <string name="add_customer_details">Add Customer Details</string>
+    <string name="enter_id">Enter id</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="enter_email">Enter email</string>
+    <string name="opportunities">Opportunities</string>
+    <string name="opportunity_id">Opportunity Id</string>
+    <string name="add_opportunities">Add Opportunities</string>
+    <string name="edit">Edit</string>
+    <string name="filters">Filters</string>
+    <string name="Active">active</string>
+    <string name="non_active">Non-Active</string>
+    <string name="lead">Lead</string>
+    <string name="close">Close</string>
+    <string name="filter">Filter</string>
+</resources>

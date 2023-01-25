@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CustomerDetailFragment">
+
+    <TextView
+        android:id="@+id/customer_detail_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_details"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_customer_detail"
+        />
+
+    <include layout="@layout/display_single_customer_details_layout"
+        android:id="@+id/layout_customer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customer_detail_textview"
+        app:layout_constraintBottom_toTopOf="@id/edit_customer_details_button"/>
+
+    <Button
+        android:id="@+id/edit_customer_details_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_customer_detail"
+        app:layout_constraintBottom_toTopOf="@id/separator_view"
+        android:layout_marginTop="20dp"
+        android:text="@string/edit"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+
+    <View
+        android:id="@+id/separator_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_customer_details_button"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

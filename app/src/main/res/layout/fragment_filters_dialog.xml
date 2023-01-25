@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dialogfragments.FiltersDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/filter_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/filters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        />
+
+        <CheckBox
+            android:id="@+id/status_active_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filter_title_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/Active"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/status_non_active_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status_active_checkbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/non_active"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/status_lead_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status_non_active_checkbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/lead"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status_lead_checkbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/filter"
+            android:textSize="20sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</FrameLayout>
